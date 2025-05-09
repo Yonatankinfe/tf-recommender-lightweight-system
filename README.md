@@ -15,16 +15,17 @@ This project implements a lightweight, simple content-based recommendation syste
 
 ## 📂 Project Structure
 recommendation_system/
-├── data/                            # Contains input datasets
-│   └── items.csv                    # Example item data (item_id, title, description)
-│
-├── models/                          # Trained models and saved artifacts
-│   ├── tfidf_vectorizer.pkl         # Saved TF-IDF vectorizer
-│   ├── embedding_model.keras        # Trained Keras embedding model
-│   └── item_embeddings.pkl          # Pickled item embeddings
-│
-├── src/                             # Source code for the application
-│   ├── __init__.py                  # Package initializer
+ data/                            # Contains input datasets
+ 
+    items.csv                    # Example item data (item_id, title, description)
+
+ models/                          # Trained models and saved artifacts
+   tfidf_vectorizer.pkl         # Saved TF-IDF vectorizer
+   embedding_model.keras        # Trained Keras embedding model
+    item_embeddings.pkl          # Pickled item embeddings
+
+ src/                             # Source code for the application
+    init__.py                  # Package initializer
 │   ├── auth.py                      # API key handling and authentication
 │   ├── data_loader.py               # Loads and prepares item data
 │   ├── main.py                      # FastAPI application entry point
