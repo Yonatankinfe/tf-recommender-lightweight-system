@@ -35,3 +35,36 @@ recommendation_system/
 ├── .env # Stores API keys (created automatically or manually)
 ├── README.md # This file
 └── requirements.txt # Python dependencies
+
+*   `data/`: Contains the raw data for items.
+*   `models/`: Stores the pre-trained TF-IDF vectorizer, the Keras embedding model, and the generated item embeddings.
+*   `src/`: Contains all the Python source code for the application.
+
+## 🚀 Setup
+
+1.  **Clone the Repository (or place project files):**
+    ```bash
+    # If you have the project folder named 'recommendation_system'
+    cd recommendation_system
+    ```
+
+2.  **Create and Activate a Virtual Environment:**
+    (Recommended to keep dependencies isolated)
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+3.  **Install Dependencies:**
+    Ensure you have a `requirements.txt` file with all necessary packages.
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(If `requirements.txt` is not provided, you'll need to create it, e.g., `pip freeze > requirements.txt` after installing packages like `tensorflow`, `scikit-learn`, `fastapi`, `uvicorn`, `python-dotenv`, `pandas`)*
+
+## 🏋️ Training the Model
+
+Run the training script from the project's root directory to process the data, train the embedding model, and generate the necessary artifacts in the `models/` directory.
+
+```bash
+python src/train.py
