@@ -14,3 +14,24 @@ This project implements a lightweight, simple content-based recommendation syste
 *   **Automatic Key Generation**: Includes an endpoint to generate new API keys, which are stored in a `.env` file.
 
 ## 📂 Project Structure
+recommendation_system/
+├── data/
+│ └── items.csv # Example item data (e.g., item_id, title, description)
+├── models/ # Saved models and artifacts (created by train.py)
+│ ├── tfidf_vectorizer.pkl
+│ ├── embedding_model.keras
+│ └── item_embeddings.pkl
+├── src/
+│ ├── init.py
+│ ├── auth.py # API key handling and authentication
+│ ├── data_loader.py # Loads and prepares data
+│ ├── main.py # FastAPI application entrypoint
+│ ├── model.py # Keras model definition
+│ ├── preprocessing.py # Text preprocessing and TF-IDF logic
+│ ├── recommender.py # Recommendation logic (cosine similarity)
+│ ├── train.py # Script to train the model and generate artifacts
+│ └── utils.py # Utility functions (saving/loading artifacts)
+├── venv/ # Python virtual environment (recommended)
+├── .env # Stores API keys (created automatically or manually)
+├── README.md # This file
+└── requirements.txt # Python dependencies
