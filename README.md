@@ -74,3 +74,12 @@ Run the training script from the project's root directory to process the data, t
 
 ```bash
 python src/train.py
+```
+
+### This script performs the following steps:
+* Loads data from data/items.csv.
+* Preprocesses the text content (e.g., title, description).
+* Creates and fits a TF-IDF vectorizer.
+* Builds and trains the neural network model (autoencoder-style) to learn item embeddings.
+* Generates and saves embeddings for all items using the trained base model.
+* Saves the TF-IDF vectorizer, the Keras embedding model, and the final item embeddings to the models/ directory.
