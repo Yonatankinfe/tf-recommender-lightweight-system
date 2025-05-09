@@ -15,26 +15,30 @@ This project implements a lightweight, simple content-based recommendation syste
 
 ## 📂 Project Structure
 recommendation_system/
-├── data/
-│ └── items.csv # Example item data (e.g., item_id, title, description)
-├── models/ # Saved models and artifacts (created by train.py)
-│ ├── tfidf_vectorizer.pkl
-│ ├── embedding_model.keras
-│ └── item_embeddings.pkl
-├── src/
-│ ├── init.py
-│ ├── auth.py # API key handling and authentication
-│ ├── data_loader.py # Loads and prepares data
-│ ├── main.py # FastAPI application entrypoint
-│ ├── model.py # Keras model definition
-│ ├── preprocessing.py # Text preprocessing and TF-IDF logic
-│ ├── recommender.py # Recommendation logic (cosine similarity)
-│ ├── train.py # Script to train the model and generate artifacts
-│ └── utils.py # Utility functions (saving/loading artifacts)
-├── venv/ # Python virtual environment (recommended)
-├── .env # Stores API keys (created automatically or manually)
-├── README.md # This file
-└── requirements.txt # Python dependencies
+├── data/                            # Contains input datasets
+│   └── items.csv                    # Example item data (item_id, title, description)
+│
+├── models/                          # Trained models and saved artifacts
+│   ├── tfidf_vectorizer.pkl         # Saved TF-IDF vectorizer
+│   ├── embedding_model.keras        # Trained Keras embedding model
+│   └── item_embeddings.pkl          # Pickled item embeddings
+│
+├── src/                             # Source code for the application
+│   ├── __init__.py                  # Package initializer
+│   ├── auth.py                      # API key handling and authentication
+│   ├── data_loader.py               # Loads and prepares item data
+│   ├── main.py                      # FastAPI application entry point
+│   ├── model.py                     # Defines the Keras model
+│   ├── preprocessing.py             # Text preprocessing and TF-IDF logic
+│   ├── recommender.py               # Core recommendation logic (e.g., cosine similarity)
+│   ├── train.py                     # Model training and artifact generation
+│   └── utils.py                     # Utility functions (e.g., saving/loading artifacts)
+│
+├── venv/                            # Python virtual environment (recommended)
+│
+├── .env                             # Environment variables (e.g., API keys)
+├── README.md                        # Project documentation
+└── requirements.txt                 # Python dependencies
 
 *   `data/`: Contains the raw data for items.
 *   `models/`: Stores the pre-trained TF-IDF vectorizer, the Keras embedding model, and the generated item embeddings.
