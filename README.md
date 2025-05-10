@@ -83,3 +83,17 @@ python src/train.py
 * Builds and trains the neural network model (autoencoder-style) to learn item embeddings.
 * Generates and saves embeddings for all items using the trained base model.
 * Saves the TF-IDF vectorizer, the Keras embedding model, and the final item embeddings to the models/ directory.
+
+# 🚀 FastAPI Recommendation Server
+
+A lightweight FastAPI-based API server that delivers item recommendations using a trained TF-IDF + embedding model.
+
+---
+
+## 📦 Prerequisites
+
+Before starting the server, ensure you have successfully run the training script:
+
+```bash
+python src/train.py
+```
