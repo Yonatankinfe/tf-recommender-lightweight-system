@@ -101,3 +101,7 @@ python src/train.py
 * tfidf_vectorizer.pkl
 * embedding_model.keras
 * item_embeddings.pkl
+# 🔑 API Key Setup
+On the first run, if no .env file or API keys exist, the server will automatically generate an initial API key and store it in a new .env file.
+
+#### 👉 Check the console log during the first server startup to copy the generated key.
