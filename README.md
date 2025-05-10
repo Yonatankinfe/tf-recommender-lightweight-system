@@ -105,3 +105,10 @@ python src/train.py
 On the first run, if no .env file or API keys exist, the server will automatically generate an initial API key and store it in a new .env file.
 
 #### 👉 Check the console log during the first server startup to copy the generated key.
+
+# 🖥 Starting the Server
+
+From the project root, start the FastAPI server using Uvicorn:
+```bash
+
+```
