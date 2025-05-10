@@ -97,7 +97,7 @@ Before starting the server, ensure you have successfully run the training script
 ```bash
 python src/train.py
 ```
-+ This should generate the following files in the models/ directory:
+### This should generate the following files in the models/ directory:
 * tfidf_vectorizer.pkl
 * embedding_model.keras
 * item_embeddings.pkl
