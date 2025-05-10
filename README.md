@@ -110,5 +110,5 @@ On the first run, if no .env file or API keys exist, the server will automatical
 
 From the project root, start the FastAPI server using Uvicorn:
 ```bash
-
+uvicorn src.main:app --host 0.0.0.0 --port 8000
 ```
