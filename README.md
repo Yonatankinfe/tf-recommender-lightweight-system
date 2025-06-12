@@ -1,6 +1,6 @@
 # Content-Based Recommendation System
 
-This project implements a lightweight, simple content-based recommendation system using Python, TensorFlow/Keras for neural network embeddings, and FastAPI for the RESTful API.
+This project implements a lightweight recommendation system, simple content-based recommendation system using Python, TensorFlow/Keras for neural network embeddings, and FastAPI for the RESTful API.
 
 ## Features
 
